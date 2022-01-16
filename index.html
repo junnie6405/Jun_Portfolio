@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jun's Website</title>
+    <meta name = "description" content = "Portfolio for software Engineer Jun Kim"> 
+    <meta name = "author" content = "Jun"> 
+    <script src="https://kit.fontawesome.com/a56498e204.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Spline+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <section id = "home">
+        <img src="img/jun.jpeg" alt="Jun Kim" class = "home__profile">
+        <h1 class = "hi__title">Hi,<br>My name is Jun</h1>
+        <h2 class = "home__description">Looking for a software engineer with great problem solving skills? That's me.</h2>   
+    </section>
+
+        <!--Skills-->
+    <section id = "skills" class = "section">
+        <h1>Skills</h1>
+        <div class="about__majors">
+            <div class="major">
+              <div class="major__icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h2 class="major__title">Front-end</h2>
+              <div class="major__description">
+                HTML, CSS, JavaScript
+              </div>
+            </div>
+            <div class="major">
+              <div class="major__icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h2 class="major__title">Back-end</h2>
+              <p class="major__description">
+                Django, Rest APIS
+              </p>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                  <i class="fab fa-python"></i>
+                </div>
+                <h2 class="major__title">Programming Languages</h2>
+                <p class="major__description">
+                  Python, C, C++, SQL
+                </p>
+              </div>
+          </div>
+    </section>
+
+    <!--Projects-->
+    <section id = "projects" class = "section">
+        <h1>My Projects</h1>
+            <div class="projects__container">
+
+                <div class="project__detail">
+                    <div class="major__icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h2 class="project__title">Multi-User Chat Server</h2>
+                    <div id = "chat" class="project__description">
+                        
+                        <h3> Link: <a href="https://github.com/junnie6405/Chat-Server">Github Page</a></h3>
+                    </div>
+                </div>
+
+                <div class="project__detail">
+                    <div class="major__icon">
+                        <i class="fas fa-tasks"></i>
+                      </div>
+                    <h2 class="project__title">Task Handler</h2>
+                    <div id = "Task" class="project__description">
+                        <h3>Link: <a href="https://github.com/junnie6405/task_scheduler">Github Page</a></h3>
+                    </div>
+                </div>
+
+                <div class="project__detail">
+                    <div class="major__icon">
+                        <i class="fas fa-dice"></i>
+                      </div>
+                    <h2 class="project__title">Baccharat Game</h2>
+                    <div id = "Baccharat" class="project__description">
+                        <h3>Link: <a href="https://github.com/junnie6405/Baccharat_game">Github Page</a></h3>
+                    </div>
+                </div>
+
+                <div class="project__detail">
+                    <div class="major__icon">
+                        <i class="fas fa-building"></i>
+                      </div>
+                    <h2 class="project__title">rhodesdorm.com<br>(work in progress)</h2>
+                    <div class="project__description">
+                        <h4>Using Python's Django Framework, <br>
+                        I am making a website that has reviews of <br>
+                        many different dorm buildings at Rhodse College. <br> </h4>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    <!--About-->
+
+    <section id = "about" class = "section">
+        <h1>About me</h1>
+        <p> I am a Senior at Rhodes College, majoring in Computer Science. 
+            I have a fullstack developer internship experience at IMC Companies and I'm 
+            currently looking for a full-time position to launch my career. 
+            Here are my 3 biggest strenghts: 
+        </p>
+
+        <div class="strength__container">
+
+            <div class="about__strength">
+                <div class="strength">
+                    <div class="strength__pic"><img id = "passion_pic" src="img/passion.jpeg" alt="passion"></div>
+                    <h2 class="strength__title">Passion</h2>
+                    <div class="strength__description">
+                        The idea of using my computer science knowledge and creativity to solve real-world problems always excite me. 
+                        I am always eager to learn new languages/frameworks to expand my skillsets.
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__strength">
+                <div class="strength">
+                    <div class="strength__pic"><img id = "pressure_pic" src="img/pressure.png" alt="pressure"></div>
+                    <h2 class="strength__title">Time Management</h2>
+                    <div class="strength__description">
+                        I tend to work better with a set deadline. When I am working under pressure, I am great at making plans and managing my time wisely.
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__strength">
+                <div class="strength">
+                    <div class="strength__pic"><img id = "communicate" src="img/communication.jpeg" alt="communication"></div>
+                    <h2 class="strength__title">Great Communication Skills</h2>
+                    <div class="strength__description">
+                        Through my internship exprience at IMC, I learned how to work as a team member of the development team. 
+                        The Teaching Assistant position at Rhodes College helped me develop the ability to speak about my algorithmic thinking in a simple manner.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="about__jobs">
+            <h2>Internship Experiences</h2>
+            <div class="job">
+                <img class = "job__logo" src="img/imc.png" alt="imc">
+                <div class="job__descirption">
+                    <p class = "job__name">Full Stack Developer Intern</p> 
+                    <p class = "job__period">2021.09 ~ Present</p>
+                </div>
+            </div>
+            
+            <div class="job">
+                <img class = "job__logo" src="img/memphis.jpeg" alt="police">
+                <div class="job__description">
+                    <p class = "job__name">Memphis Police Department database analyst/admin Intern</p> 
+                    <p class = "job__period">2018.6 ~ 2018.8</p>
+                </div>        
+            </div>
+
+        </div>
+    </section>
+    
+
+    <!--Contact-->
+    <section id = "contact" class = "section">
+        <h1 class = "contact__title">Contact Me</h1>
+        <h2 class = "contact__email">kimju-22@rhodes.edu</h2>  
+    </section>
+
+    <script src = "main.js" defer></script>
+</body>
+</html>

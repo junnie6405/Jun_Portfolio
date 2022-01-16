@@ -1,0 +1,236 @@
+
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #fe918d;
+    --color-dark-pink: #ff6863;
+    --color-dark-grey: #4d4d4d;
+    --color-grey: #616161;
+    --color-light-grey: #7c7979;
+    --color-blue: #73aace;
+    --color-yellow: #fff7d1;
+    --color-orange: #feb546;
+    --color-black: #000000;
+  
+    /* Font size */
+    --font-large: 50px;
+    --font-medium: 30px;
+    --font-regular: 20px;
+    --font-small: 16px;
+    --font-micro: 14px;
+  
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    --border_radius:4px 
+  }
+  /* Typography */
+  body {
+      margin:0;
+      font-family: 'Roboto', sans-serif;
+  }
+  a {
+      text-decoration: none;
+      color:var(--color-white)
+  }
+  ul {
+      list-style: none;
+      padding-left: 0;
+  }
+
+
+  h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    margin: 16px 0px;
+  }
+  
+  h2 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin: 8px 0;
+  }
+  
+  h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 8px 0;
+  }
+  
+  p {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 4px 0;
+  }
+
+  button {
+      background-color: transparent; 
+      cursor: pointer; 
+      border: none; 
+      outline: none;
+  }
+
+
+/*navbar*/ 
+#navbar {
+    display:flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: var(--color-light-grey);
+    padding-top: 10px;
+    align-items: center;
+    color: var(--color-white);
+    
+}
+
+.navbar__menu {
+    display:flex;
+}
+
+.navbar__menu__item {
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: var(--border_radius);
+}
+
+.navbar__menu__item:hover{
+    background-color: var(--color-dark-pink);
+}
+
+#home {
+    background-color: #000028;
+    padding:40px;
+    text-align:center;
+}
+
+.home__profile {
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    border: 5px solid var(--color-blue);
+}
+
+.hi__title, .home__description {
+    color: var(--color-white);
+}
+#about {
+    background-color: var(--color-light-white);
+}
+
+#projects {
+    background-color: var(--color-dark-white);
+}
+
+#skills {
+    background-color: var(--color-light-white);
+}
+.section {
+    padding:50px;
+    text-align: center;
+    max-width:1200px;
+    margin:auto;
+}
+
+.major__description {
+    color: #000050;
+    font-weight: 500;
+    font-size:larger;
+}
+
+
+.strength__container {
+    display:flex; 
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+#passion_pic {
+    width:250px; 
+    height:250px;
+}
+
+#communicate {
+    width:250px;
+    height:250px;
+}
+
+#pressure_pic {
+    width:250px;
+    height:250px;
+}
+
+.job {
+    display:flex;
+    align-items: center;
+    background-color: var(--color-light-grey);
+}
+
+.job__description{
+    margin:0 16px; 
+    text-align: left;
+}
+
+.job__name, .job__period {
+    font: var(--font-small);
+    color:#ffffff;
+}
+
+.job__logo {
+    width:150px;
+    height:150px;
+}
+
+.projects__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+
+.about__majors{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.major__icon{
+    width: 150px; 
+    height: 150px; 
+    margin :auto; 
+    line-height: 150px;
+    font-size: 75px;
+    color: var(--color-blue);
+    border: 5px solid var(--color-blue);
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.project__description {
+    margin: 30px;
+}
+
+@media screen and (max-width:768px){
+    .about__majors{
+        display:flex;
+        flex-direction: column;
+        margin: 75px 0;
+    }
+    .projects__container{
+        display:flex;
+        flex-direction: column;
+        margin: 75px 0;
+    }
+    .strength__container{
+        display:flex;
+        flex-direction: column;
+        margin: 50px 0;
+    }
+}
