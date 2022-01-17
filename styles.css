@@ -178,6 +178,8 @@
     text-align: left;
 }
 
+
+
 .job__name, .job__period {
     font: var(--font-small);
     color:#ffffff;
@@ -194,6 +196,14 @@
     margin: 100px 0;
 }
 
+.about__strength{
+    width:25%;
+    height:25%;
+}
+
+.strength__description{
+    text-align: left;
+}
 
 .about__majors{
     display: flex;
@@ -214,7 +224,7 @@
 }
 
 .project__description {
-    margin: 30px;
+    margin: 29px;
 }
 
 @media screen and (max-width:768px){
