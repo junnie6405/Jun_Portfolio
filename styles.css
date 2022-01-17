@@ -167,6 +167,7 @@
     height:250px;
 }
 
+
 .job {
     display:flex;
     align-items: center;
@@ -177,8 +178,6 @@
     margin:0 16px; 
     text-align: left;
 }
-
-
 
 .job__name, .job__period {
     font: var(--font-small);
@@ -201,7 +200,7 @@
     height:25%;
 }
 
-.strength__description{
+.about__strength p {
     text-align: left;
 }
 
@@ -242,5 +241,10 @@
         display:flex;
         flex-direction: column;
         margin: 50px 0;
+    }
+
+    .about__strength {
+        width:70%; 
+        height:25%;
     }
 }
